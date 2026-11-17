@@ -1,0 +1,96 @@
+
+const freeBooks = [
+  {
+    id: 1342,
+    title: 'Pride and Prejudice',
+    author: 'Jane Austen',
+    category: 'Romance',
+    year: 1813,
+  },
+  {
+    id: 11,
+    title: "Alice's Adventures in Wonderland",
+    author: 'Lewis Carroll',
+    category: 'Fantasy',
+    year: 1865,
+  },
+  {
+    id: 84,
+    title: 'Frankenstein',
+    author: 'Mary Shelley',
+    category: 'Science Fiction',
+    year: 1818,
+  },
+  {
+    id: 1661,
+    title: 'The Adventures of Sherlock Holmes',
+    author: 'Arthur Conan Doyle',
+    category: 'Mystery',
+    year: 1892,
+  },
+  {
+    id: 2701,
+    title: 'Moby-Dick',
+    author: 'Herman Melville',
+    category: 'Adventure',
+    year: 1851,
+  },
+  {
+    id: 345,
+    title: 'Dracula',
+    author: 'Bram Stoker',
+    category: 'Horror',
+    year: 1897,
+  },
+  {
+    id: 35,
+    title: 'The Time Machine',
+    author: 'H. G. Wells',
+    category: 'Science Fiction',
+    year: 1895,
+  },
+  {
+    id: 36,
+    title: 'The War of the Worlds',
+    author: 'H. G. Wells',
+    category: 'Science Fiction',
+    year: 1898,
+  },
+  {
+    id: 74,
+    title: 'The Adventures of Tom Sawyer',
+    author: 'Mark Twain',
+    category: 'Adventure',
+    year: 1876,
+  },
+  {
+    id: 76,
+    title: 'Adventures of Huckleberry Finn',
+    author: 'Mark Twain',
+    category: 'Adventure',
+    year: 1884,
+  },
+  {
+    id: 98,
+    title: 'A Tale of Two Cities',
+    author: 'Charles Dickens',
+    category: 'Historical Fiction',
+    year: 1859,
+  },
+  {
+    id: 33,
+    title: 'The Scarlet Letter',
+    author: 'Nathaniel Hawthorne',
+    category: 'Historical Fiction',
+    year: 1850,
+  },
+  {
+    id: 1260,
+    title: 'Jane Eyre',
+    author: 'Charlotte Brontë',
+    category: 'Romance',
+    year: 1847,
+  },
+]
+
+export default freeBooks
