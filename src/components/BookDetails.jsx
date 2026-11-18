@@ -7,13 +7,14 @@ function BookDetails({ book, onClose }) {
   const [details, setDetails] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
-  const [saveMessage, setSaveMessage] = useState('')
+  const [isAdded, setIsAdded] = useState(false)
 
   useEffect(() => {
     async function loadDetails() {
       setLoading(true)
       setError('')
       setDetails(null)
+      setIsAdded(false)
 
       try {
         const workId = book.key.split('/').pop()
@@ -39,13 +40,8 @@ function BookDetails({ book, onClose }) {
       : details?.description?.value || 'No description available.'
 
   function handleAddToLibrary() {
-    const wasAdded = addBookToLibrary(book)
-
-    setSaveMessage(
-      wasAdded
-        ? 'Book successfully added to your library!'
-        : 'This book is already in your library.'
-    )
+    addBookToLibrary(book)
+    setIsAdded(true)
   }
 
   return (
@@ -108,13 +104,10 @@ function BookDetails({ book, onClose }) {
                 className="primary-button"
                 type="button"
                 onClick={handleAddToLibrary}
+                disabled={isAdded}
               >
-                Add to My Library
+                {isAdded ? 'Added to My Library' : 'Add to My Library'}
               </button>
-
-              {saveMessage && (
-                <p role="status">{saveMessage}</p>
-              )}
             </div>
           </div>
         )}
